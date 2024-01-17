@@ -13,12 +13,15 @@ while(not exit):
         continue
 
     # basic checks for input
-    if not triangular_num.isnumeric():
-        print("Your input is not a positive number.")
-        continue
+    try:
+        tested_num = int(triangular_num)
+        if tested_num < 1:
+            print("Your input is not a positive integer.")
+    except ValueError:
+        print("Your input is not a integer.")
 
     # check if it is a triangular number
-    if not triangular_math.isTriangularNumber(triangular_num):
-        print('Your input is not a triangular number.')
-        continue
+    # if not triangular_math.isTriangularNumber(triangular_num):
+    #     print('Your input is not a triangular number.')
+    #     continue
 
