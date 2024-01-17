@@ -1,4 +1,5 @@
-# ask for user input
+import triangular_math
+
 exit = bool(False)
 
 while(not exit):
@@ -16,4 +17,8 @@ while(not exit):
         print("Your input is not a positive number.")
         continue
 
+    # check if it is a triangular number
+    if not triangular_math.isTriangularNumber(triangular_num):
+        print('Your input is not a triangular number.')
+        continue
 
