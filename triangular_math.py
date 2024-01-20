@@ -14,3 +14,8 @@ def isTriangularNumber(num):
         return True
     else:
         return False
+    
+def bisection():
+    # to be implemented
+    print()
+
