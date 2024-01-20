@@ -1,4 +1,4 @@
-def isTriangularNumber(num):
+def isTriangularNumberIterationMethod(num):
     # method 1 using a loop
     # starting at 1 and calculates always the next triangular number
     # until the result is equal or larger than the number under test
@@ -14,7 +14,10 @@ def isTriangularNumber(num):
         return True
     else:
         return False
-    
+
+def isTriangularNumberZeroPoints(num):
+    print('search for integer zeros')
+
 def bisection():
     # to be implemented
     print()

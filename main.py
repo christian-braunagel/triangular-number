@@ -21,7 +21,7 @@ while(not exit):
         print("Your input is not a integer.")
 
     # check if it is a triangular number
-    if not triangular_math.isTriangularNumber(int(triangular_num)):
+    if not triangular_math.isTriangularNumberIterationMethod(int(triangular_num)):
         print('Your input number ' + triangular_num + ' is not a triangular number.')
         continue
     else:
