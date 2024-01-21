@@ -18,3 +18,6 @@ def isTriangularNumberIterationMethod(num):
 def isTriangularNumberZeroPoints(num):
     print('search for integer zeros')
 
+def isTriangularNumberLookUpTable(num):
+    print('implement a method to check triangular number with look up table')
+
