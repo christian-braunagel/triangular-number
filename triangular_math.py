@@ -18,7 +18,3 @@ def isTriangularNumberIterationMethod(num):
 def isTriangularNumberZeroPoints(num):
     print('search for integer zeros')
 
-def bisection():
-    # to be implemented
-    print()
-
