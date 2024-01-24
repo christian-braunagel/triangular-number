@@ -20,10 +20,17 @@ while(not exit):
     except ValueError:
         print("Your input is not a integer.")
 
-    # check if it is a triangular number
+    # check if it is a triangular number according to the iterative method
     if not triangular_math.isTriangularNumberIterationMethod(int(triangular_num)):
-        print('Your input number ' + triangular_num + ' is not a triangular number.')
+        print('Your input number ' + triangular_num + ' is not a triangular number according to the iterative method.')
         continue
     else:
-        print('Your input number ' + triangular_num + ' is a triangular number.')
+        print('Your input number ' + triangular_num + ' is a triangular number according to the iterative method.')
+
+    # check if it is a triangular number according to the zero points method
+    if not triangular_math.isTriangularNumberZeroPoints(int(triangular_num)):
+        print('Your input number ' + triangular_num + ' is not a triangular number according to the zero points method.')
+        continue
+    else:
+        print('Your input number ' + triangular_num + ' is a triangular number according to the zero points method.')
 
