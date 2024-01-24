@@ -1,3 +1,5 @@
+import math_lib
+
 def isTriangularNumberIterationMethod(num):
     # method 1 using a loop
     # starting at 1 and calculates always the next triangular number
@@ -15,8 +17,16 @@ def isTriangularNumberIterationMethod(num):
     else:
         return False
 
+# function to determine the triangular number
+def funcTriangularNum(x, constant):
+    return x*x + x - constant
+
 def isTriangularNumberZeroPoints(num):
-    print('search for integer zeros')
+
+    if num == 1 or num == 3:
+        return True
+
+    print(math_lib.hasSignChange(funcTriangularNum,-num, num))
 
 def isTriangularNumberLookUpTable(num):
     print('implement a method to check triangular number with look up table')
